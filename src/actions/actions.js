@@ -16,11 +16,6 @@ export const successSearch = results => {
 };
 
 
-// !!! això ho faríem servir en cas de voler fer servir el redux-thunk a les nostres apliacions
-// !!! això ho faríem servir en cas de voler fer servir el redux-thunk a les nostres apliacions
-
-/*
-
 // En lloc de retonrar un objecte pla, el que fem és retornar una funció que rep el paràmetre dispatch
 export const searchRepositories = value => dispatch => {
 
@@ -44,24 +39,4 @@ export const searchRepositories = value => dispatch => {
 
 };
 
- */
 
-
-// !!! això ho faríem servir en cas de voler fer servir el redux-promise a les nostres apliacions
-// !!! això ho faríem servir en cas de voler fer servir el redux-promise a les nostres apliacions
-
-/*
-
-export const searchRepositories = results => {
-    return {
-        type: 'SEARCH',
-
-        // Hi tenim una promesa que resol les dades aquí
-        // En cas de donar error s'aixeca un flag d'error
-        payload: fetch(`https://api.github.com/search/repositories?q=${ value }`)
-            .then(res => res.json())
-            .then(res => res.items)
-    };
-};
-
-*/
