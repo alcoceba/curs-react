@@ -31,8 +31,7 @@ const reducer = (state = initialState, action) => {
                 queried: true // l'aixequem ja que hem completat una crida
             });
 
-        // !!! per si volem fer servir el redux-promise
-        /*
+        // EN redux promise
         case 'SEARCH':
             // Fem servir el payload definit a actions
             // en cas que hi hagi un error, el tindrem en el flag d'error
@@ -41,7 +40,6 @@ const reducer = (state = initialState, action) => {
                 results: !action.error ? action.payload : [],
                 queried: true // l'aixequem ja que hem completat una crida
             });
-        */
 
         // Per defecte retornem l'estat, mai pot retonrar nul, sinó donarà comportaments estranys a l'aplicació
         default:
